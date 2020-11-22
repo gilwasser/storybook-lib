@@ -1,0 +1,11 @@
+<div class="dropdown">
+  <button (click)="open = ! open" class="dropdown-button">
+    {{text}}
+    <app-icon [icon]="'downArrow'"></app-icon>
+  </button>
+  <div class="dropdown-pad" [ngClass]="{'hide':!open}">
+    <p *ngFor="let item of items" class="dropdown-element" (click)="onSelect(item)">{{item}}</p>
+  </div>
+</div>
+
+

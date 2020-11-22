@@ -1,0 +1,114 @@
+@import "src/varibales";
+
+.avatar {
+  background-size: cover;
+  background-position: center;
+  border-radius: $rounded-full;
+  position: relative;
+}
+
+.avatar-status {
+  position: absolute;
+  border-radius: $rounded-full;
+
+  div {
+    width: 100%;
+    height: 100%;
+    border-radius: $rounded-full;
+  }
+}
+
+.avatar-small {
+  width: $s-16;
+  height: $s-16;
+  border: 4px solid white;
+
+  .avatar-status {
+    width: $s-4;
+    height: $s-4;
+    border: 4px solid white;
+  }
+}
+
+.avatar-medium {
+  width: $s-24;
+  height: $s-24;
+  border: 4px solid white;
+
+  .avatar-status {
+    width: $s-6;
+    height: $s-6;
+    border: 4px solid white;
+  }
+}
+
+
+.avatar-large {
+  width: $s-32;
+  height: $s-32;
+  border: 8px solid white;
+
+  .avatar-status {
+    width: $s-8;
+    height: $s-8;
+    border: 8px solid white;
+  }
+}
+
+.avatar-online {
+  background-color: $success-5;
+
+  div {
+    background-color: $success-5;
+  }
+}
+
+
+.avatar-offline {
+  background-color: $gray-5;
+
+  div {
+    background-color: $gray-5;
+  }
+}
+
+.avatar-danger {
+  background-color: $danger-5;
+
+  div {
+    background-color: $danger-5;
+  }
+}
+
+
+.avatar-primary {
+  background-color: $primary-5;
+
+  div {
+    background-color: $primary-5;
+  }
+}
+
+
+.avatar- {
+  &online, &primary {
+    div {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+      @keyframes ping {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        75%, 100% {
+          transform: scale(2);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+

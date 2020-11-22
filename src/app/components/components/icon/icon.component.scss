@@ -1,0 +1,10 @@
+@import "src/varibales";
+
+.icon{
+  &-medium{
+    font-size: $text-xl;
+  }
+  &-large{
+    font-size: $text-2xl;
+  }
+}

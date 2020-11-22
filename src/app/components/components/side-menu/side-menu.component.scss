@@ -1,0 +1,35 @@
+@import "src/varibales";
+
+.side-menu {
+  background-color: $gray-1;
+  box-shadow: $shadow-md;
+  font-weight: $font-semibold;
+}
+
+.title {
+  font-size: $text-2xl;
+  margin: $s-4;
+  padding-top: $s-4;
+  color: $primary-5;
+}
+
+.menu-row {
+  padding: 0 $s-4;
+  display: flex;
+  gap: $s-6;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-1;
+  }
+}
+
+.active {
+  background-color: $primary-5;
+  color: white;
+
+  &:hover {
+    background-color: $primary-5;
+  }
+}

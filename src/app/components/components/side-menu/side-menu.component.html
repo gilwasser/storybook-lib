@@ -1,0 +1,9 @@
+<div class="side-menu">
+  <h1 class="title">{{name}}</h1>
+  <div (click)="activeIndex=i" *ngFor="let menuItem of menuItems; let i = index"
+       class="menu-row"
+       [ngClass]="{'active':activeIndex == i}">
+    <app-icon [icon]="menuItem.icon"></app-icon>
+    <p>{{menuItem.name}}</p>
+  </div>
+</div>

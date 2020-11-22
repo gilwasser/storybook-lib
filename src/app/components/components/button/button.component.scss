@@ -1,0 +1,77 @@
+@import "src/varibales";
+
+.button {
+  color: white;
+  border-radius: $rounded-sm;
+  border: none;
+  cursor: pointer;
+  font-weight: $font-semibold;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button-primary {
+  background-color: $primary-5;
+
+  &:hover {
+    background-color: $primary-4;
+  }
+
+  &:active {
+    background-color: $primary-6;
+  }
+}
+
+.button-success {
+  background-color: $success-5;
+
+  &:hover {
+    background-color: $success-4;
+  }
+
+  &:active {
+    background-color: $success-6;
+  }
+}
+
+.button-danger {
+  background-color: $danger-5;
+
+  &:hover {
+    background-color: $danger-4;
+  }
+
+  &:active {
+    background-color: $danger-6;
+  }
+}
+
+.button-disable{
+  background-color: $gray-5;
+  cursor: no-drop;
+  &:hover{
+    background-color: $gray-5;
+  }
+
+  &:active{
+    background-color: $gray-5;
+  }
+}
+
+.button-small{
+  padding: $s-1;
+  font-size: $text-sm;
+}
+
+.button-medium{
+  padding: $s-2;
+}
+
+.button-large{
+  padding: $s-2;
+  font-size: $text-lg;
+}
+
+

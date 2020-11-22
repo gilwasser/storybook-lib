@@ -1,0 +1,41 @@
+@import "src/varibales";
+
+.card {
+  font-weight: $font-semibold;
+}
+
+.img {
+  border-radius: $rounded-lg;
+  box-shadow: $shadow-md;
+  width: 100%;
+}
+
+.card-content{
+  margin: $ms-12 $s-4;
+}
+
+@media (min-width: $screen-md) {
+  .card-content{
+    margin-top: $ms-16;
+  }
+}
+
+.card-text{
+  //relative bg-white rounded-lg py-4 px-8 mx-4 shadow-lg border
+  position: relative;
+  background-color: white;
+  border-radius: $rounded-lg;
+  padding: $s-4 $s-8;
+  box-shadow: $shadow-lg;
+}
+
+.card-title{
+  font-size: $text-lg;
+  padding-bottom: $s-2;
+}
+
+.card-time{
+  //mt-2 text-gray-500
+  margin-top: $s-2;
+  color: $gray-5;
+}

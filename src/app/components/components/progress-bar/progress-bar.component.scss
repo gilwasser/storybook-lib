@@ -1,0 +1,35 @@
+@import "src/varibales";
+
+.progress-bar-info{
+  display: flex;
+  justify-content: space-between;
+  font-weight: $font-semibold;
+  color: $gray-6;
+  font-size: $text-sm;
+  padding: 0;
+  p {
+    margin: 0;
+  }
+}
+
+.progress-bar{
+  //h-2 w-full bg-gray-100 rounded-full border
+  height: $s-2;
+  width: 100%;
+  background-color: $gray-1;
+  border-radius: $rounded-full;
+  border: $border;
+  padding: 0;
+}
+
+.progress-bar-progress{
+  //h-full rounded-full
+  margin: 0;
+  height: 100%;
+  border-radius: $rounded-full;
+  background-color: $primary-5;
+}
+
+.progress-bar-full{
+  background-color: $success-5;
+}

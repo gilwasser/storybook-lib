@@ -1,0 +1,11 @@
+
+<div class="progress-bar-info">
+  <p >{{text}}</p>
+  <p *ngIf="percent">{{percent}}%</p>
+</div>
+
+
+<div class="progress-bar">
+  <div class="progress-bar-progress" [ngStyle]="{width: percent+'%'}"
+       [ngClass]="{'progress-bar-full':percent == 100}"></div>
+</div>
