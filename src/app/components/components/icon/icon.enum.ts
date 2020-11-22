@@ -1,7 +1,9 @@
 export enum IconName {
   award = 'award',
   menu = 'menu',
-  downArrow = 'downArrow'
+  downArrow = 'downArrow',
+  leftArrow = 'leftArrow',
+  rightArrow = 'rightArrow'
 }
 
 export enum IconSize {
