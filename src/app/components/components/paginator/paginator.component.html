@@ -1,0 +1,27 @@
+<div class="element" (click)="onDecrement()" [ngClass]="{'disabled':current === 1}">
+  <app-icon [icon]="leftIcon"></app-icon>
+</div>
+<div class="element" *ngFor="let page of pages"
+     [ngClass]="{'current': page == current,'disabled': page === 0}"
+     (click)="onClick(page)">
+  {{page > 0 ? page : '...'}}
+</div>
+<div class="element"
+     (click)="onIncrement()"
+     [ngClass]="{'disabled':current === pages[pages.length-1]}">
+  <app-icon [icon]="rightIcon"></app-icon>
+</div>
+
+<div *ngIf="!simple">
+  <div class="element data" (click)="openDropdown()">
+    {{dataPerPage}} / Page
+    <app-icon [icon]="'downArrow'"></app-icon>
+  </div>
+  <div *ngIf="dropdownOpen" class="dropdown">
+    <p (click)="dataPerPageChange(10)">10/Page</p>
+    <p (click)="dataPerPageChange(25)">25/Page</p>
+    <p (click)="dataPerPageChange(50)">50/Page</p>
+  </div>
+</div>
+
+
